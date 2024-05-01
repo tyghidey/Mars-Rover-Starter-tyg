@@ -14,6 +14,7 @@ describe("Command class", function() {
   })
 
   it("constructor sets a value passed in as the 2nd argument", function() {
+    let commands = [new Command('MODE_CHANGE', 'LOW_POWER'), new Command('STATUS_CHECK')];
     let moveCommand = new Command('MOVE', 12000);
     expect(moveCommand.value).toEqual(12000)
   })
